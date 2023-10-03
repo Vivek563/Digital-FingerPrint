@@ -1,6 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 function GeoData() {
+
+  const [userLocation, setUserLocation] = useState({});
+
+  useEffect(() => {
+    
+    axios.get(`https://ipinfo.io?token=8c8be48aaba949`)
+      .then((response) => {
+        setUserLocation(response.data)
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, []);
+
+ 
+
   return (
     <section className="GeoHeroSection">
       <div className="geo-img">
@@ -13,25 +30,28 @@ function GeoData() {
 
         <div className="geosecretidentifier">
           <p>
-          IP Address: <span>49.36.136.25</span>
+          IP Address: <span>{userLocation.ip}</span>
           </p>
           <p>
-          City: <span>New Delhi</span>
+          City: <span>{userLocation.city}</span>
           </p>
           <p>
-          Region:<span> National Capital Territory of Delhi (DL)</span>
+          Region:<span> {userLocation.region}</span>
           </p>
           <p>
-          Country: <span>India (IN)</span>
+          Country: <span>{userLocation.country}</span>
           </p>
           <p>
-          ISP: <span>Reliance Jio Infocomm Limited</span>
+          ISP: <span>{userLocation.org}</span>
           </p>
           <p>
-          Timezone: <span>Asia/Kolkata</span>
+          Timezone: <span>{userLocation.timezone}</span>
           </p>
           <p>
-          Org: <span>JIO FTTX SUBSCRIBER</span>
+          Postal: <span>{userLocation.postal}</span>
+          </p>
+          <p>
+          loc: <span>{userLocation.loc}</span>
           </p>
         </div>
       </div>

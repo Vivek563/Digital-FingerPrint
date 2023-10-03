@@ -19,7 +19,7 @@ function Home() {
                 className="list-hero-img"
                 src="./Geographical.png"
                 alt=""
-                srcset=""
+                srcSet=""
               />
               Geographical Data
             </li>
