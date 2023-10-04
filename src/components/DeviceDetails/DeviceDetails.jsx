@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import platform from "platform";
-import "./device.css";
+
 
 function DeviceDetails() {
   const [browser, setBrowser] = useState("");
@@ -31,7 +31,7 @@ function DeviceDetails() {
 
   return (
     <>
-      <div className="split">
+      <div className="split desktop">
         <div className="right">
           <h1 className="deviceheading">Device Details</h1>
           <ul>
@@ -70,6 +70,48 @@ function DeviceDetails() {
         <div className="left">
           <img src="/desktop.png" alt="" />
         </div>
+      </div>
+{/* mobile view */}
+      <div className="split-mobile">
+      <div className="left">
+          <img src="/desktop.png" alt="" />
+        </div>
+        <div className="right">
+          <h1 className="deviceheading">Device Details</h1>
+          <ul>
+            <li className="li-inline">
+              <p>
+                Browser: <span>{browser}</span>
+              </p>
+            </li>
+            <li className="li-inline">
+              <p>
+                Browser Version: <span>{version}</span>
+              </p>
+            </li>
+            <li className="li-inline">
+              <p>
+                Operating System: <span>{operatingsystem}</span>
+              </p>
+            </li>
+            <li className="li-inline">
+              <p>
+                CPU Arch: <span>{layout}</span>
+              </p>
+            </li>
+            <li className="li-inline">
+              <p>
+                Installed Fonts: <span>{fontSize}</span>
+              </p>
+            </li>
+            <li className="li-inline">
+              <p>
+                Screen Resolution: <span>{screenResolution}</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+        
       </div>
     </>
   );

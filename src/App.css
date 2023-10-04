@@ -1,185 +1,125 @@
-/* #####################
-hero section
-########################*/
-
-.herosection {
+/* Default styles for larger screens */
+.split {
   display: flex;
   align-items: center;
-  align-content: center;
+  align-content: space-between;
   flex-wrap: wrap;
-  margin: 30px;
-  margin-top: 50px;
+  color: #fff;
 }
-
-.hero-img {
-  max-width: 40%;
-  max-height: 50%;
-  align-content: center;
-}
-.hero-text {
+.left {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin-left: 111px;
+  align-content: center;
   width: 50%;
-
+  align-items: center;
 }
-
+.left img{
+  width: 80%;
+  align-items: center;
+}
+.right {
+  width: 50%;
+  padding: 20px;
+}
+.li-inline {
+  display: flex;
+  align-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+}
 .headingh1 {
-  font-size: 4.5rem;
-  font-weight: bold;
+  font-size: 60px;
+  font-weight: 900;
   color: #ff725e;
 }
+.deviceheading {
+    font-size: 60px;
+    margin-left: 15px;
+    font-weight: 900;
+    color: #7b95f2;
+  }
 .heropara {
+  font-size: 25px;
   color: #455a64;
-  font-size: 2.2rem;
-}
-.hero-ul {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
 }
 .list-hero-img {
-  width: 6.5%;
-  padding: 10px;
-  height: 50px;
+  width: 8%;
 }
-li {
-  display: flex;
-  flex-direction: row;
-  align-content: space-between;
-  align-items: center;
-  font-size: 1.5rem;
+.li-inline p {
+  font-size: 25px;
   font-weight: 600;
 }
-.secretidentifier {
-  color: #455a64;
-  font-size: 2.3rem;
-  font-weight: 600;
+.split-mobile{
+  display: none;
 }
-span {
-  color: #fff;
-}
+@media (max-width: 768px) {
+  .split {
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    
+  }
+  .desktop{
+    display: none;
+  }
+  .left,
+  .right {
+    width: 100%;
+    padding: 20px;
+  }
+  .li-inline {
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+  }
+  .list-hero-img {
+    width: 16%;
+  }
+  .headingh1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .heropara {
+    font-size: 20px;
+    text-align: center;
+  }
+  .left img{
+    width: 100%;
+    align-items: center;
+  }
+  .li-inline p {
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+  }
+  .deviceheading {
+    font-size: 55px;
+    text-align: center;
+    font-weight: 900;
+    margin-top: -70px;
+    color: #7b95f2;
+  }
 
-/* ############################
-Device section
-############################ */
-
-.DeviceHeroSection {
-  display: flex;
-  align-items: center;
-  align-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin-left: 60px;
-  margin-top: 150px;
-  height: 100vh;
+  .split-mobile{
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    color: #fff;
+  }
 }
-
-.device-img {
-  width: 40%;
-  margin-left: 173px;
-}
-
-/* ############################
-Geographical section
-############################ */
-
-.GeoHeroSection {
-  display: flex;
-  align-items: center;
-  align-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin-left: 60px;
-  height: 83vh;
-}
-
-.geo-img {
-  width: 40%;
-}
-.geo-text {
-  margin-left: 120px;
-}
-.Geoheadingh1 {
-  font-size: 4.5rem;
-  font-weight: bold;
-  color: #ff725e;
-}
-.geosecretidentifier {
-  color: #455a64;
-  font-size: 2rem;
-  font-weight: 600;
-}
-
-/* ##########################
-Footer
-#############################
-*/
 .footer {
   display: flex;
   align-items: center;
   flex-direction: column;
   color: #fff;
   margin-bottom: 40px;
+  margin-top: 30px;
+  list-style-type: none
 }
 .footer-icon {
   display: flex;
   align-items: center;
   align-content: space-between;
   gap: 20px;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  .herosection {
-    flex-direction: column;
-    margin: 15px;
-  }
-
-  .hero-img {
-    max-width: 100%;
-    max-height: auto;
-  }
-
-  .hero-text {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    align-content: space-between;
-  }
-
-  .headingh1 {
-    font-size: 2rem;
-    text-align: center;
-    margin-right: 40px;
-  }
-
-  .heropara {
-    font-size: 1.5rem;
-    text-align: center;
-
-  }
-
-  .hero-ul {
-    flex-direction: column;
-  }
-
-  .list-hero-img {
-    width: 10%;
-  }
-
-  .device-img {
-    width: 80%;
-    margin-left: 0;
-  }
-  .geo-img {
-    margin-top: 200px;
-    width: 80%;
-    margin-left: 0;
-  }
-
-  .footer {
-    margin-bottom: 20px;
-  }
 }
