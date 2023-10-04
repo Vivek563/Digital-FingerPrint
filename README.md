@@ -1,6 +1,6 @@
 # Digital Fingerprint
 
-![Digital Fingerprint Screenshot](./thumbnail.png)
+![Digital Fingerprint Screenshot](https://firebasestorage.googleapis.com/v0/b/facedetection-d4d02.appspot.com/o/thumbnail.png?alt=media&token=ecb02f88-9d89-4d7d-93e7-0d1fd50fd043&_gl=1*1jkgp8k*_ga*MzY4NzQ4NTE4LjE2NzkyODU2NDI.*_ga_CW55HF8NVT*MTY5NjQ0ODAwNS40LjEuMTY5NjQ0ODA4OC42MC4wLjA.)
 
 ## Overview
 
