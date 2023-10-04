@@ -123,3 +123,26 @@
   align-content: space-between;
   gap: 20px;
 }
+
+span{
+  font-weight: 900;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fdd096; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff725e; 
+}

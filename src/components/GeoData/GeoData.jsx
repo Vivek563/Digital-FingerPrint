@@ -7,7 +7,7 @@ function GeoData() {
 
   useEffect(() => {
     
-    axios.get(`https://ipinfo.io?token=8c8be48aaba949`)
+    axios.get(`http://ip-api.com/json/`)
       .then((response) => {
         setUserLocation(response.data)
       })
@@ -30,7 +30,12 @@ function GeoData() {
           <ul>
             <li className="li-inline">
               <p>
-              IP Address: <span>{userLocation.ip}</span>
+              IP Address: <span>{userLocation.query}</span>
+              </p>
+            </li>
+            <li className="li-inline">
+              <p>
+              Country: <span>{userLocation.country}</span>
               </p>
             </li>
             <li className="li-inline">
@@ -40,14 +45,10 @@ function GeoData() {
             </li>
             <li className="li-inline">
               <p>
-              Region:<span> {userLocation.region}</span>
+              Region:<span> {userLocation.regionName}</span>
               </p>
             </li>
-            <li className="li-inline">
-              <p>
-              Country: <span>{userLocation.country}</span>
-              </p>
-            </li>
+           
             <li className="li-inline">
               <p>
               ISP: <span>{userLocation.org}</span>
@@ -60,12 +61,17 @@ function GeoData() {
             </li>
             <li className="li-inline">
               <p>
-              Postal: <span>{userLocation.postal}</span>
+              Latitude: <span> {userLocation.lat}</span>
+              </p>
+            </li>
+             <li className="li-inline">
+              <p>
+              Longitude:  <span>{userLocation.lon}</span>
               </p>
             </li> 
             <li className="li-inline">
               <p>
-              loc: <span>{userLocation.loc}</span>
+              Postal Code: <span>{userLocation.zip}</span>
               </p>
             </li>
             
