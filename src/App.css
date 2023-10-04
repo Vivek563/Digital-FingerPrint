@@ -1,4 +1,4 @@
-/* ##################### 
+/* #####################
 hero section
 ########################*/
 
@@ -12,15 +12,17 @@ hero section
 }
 
 .hero-img {
-  width: 40%;
-  height: 50%;
+  max-width: 40%;
+  max-height: 50%;
   align-content: center;
 }
 .hero-text {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-left: 50px;
+  margin-left: 111px;
+  width: 50%;
+
 }
 
 .headingh1 {
@@ -90,7 +92,7 @@ Geographical section
   flex-wrap: wrap;
   flex-direction: row;
   margin-left: 60px;
- height: 80vh;
+  height: 83vh;
 }
 
 .geo-img {
@@ -114,16 +116,70 @@ Geographical section
 Footer
 #############################
 */
-.footer{
+.footer {
   display: flex;
   align-items: center;
   flex-direction: column;
   color: #fff;
   margin-bottom: 40px;
 }
-.footer-icon{
+.footer-icon {
   display: flex;
   align-items: center;
   align-content: space-between;
   gap: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .herosection {
+    flex-direction: column;
+    margin: 15px;
+  }
+
+  .hero-img {
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  .hero-text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+  }
+
+  .headingh1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-right: 40px;
+  }
+
+  .heropara {
+    font-size: 1.5rem;
+    text-align: center;
+
+  }
+
+  .hero-ul {
+    flex-direction: column;
+  }
+
+  .list-hero-img {
+    width: 10%;
+  }
+
+  .device-img {
+    width: 80%;
+    margin-left: 0;
+  }
+  .geo-img {
+    margin-top: 200px;
+    width: 80%;
+    margin-left: 0;
+  }
+
+  .footer {
+    margin-bottom: 20px;
+  }
 }

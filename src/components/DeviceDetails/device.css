@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    list-style-type: none
+  }
+  .footer-icon {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    gap: 20px;
+  }

@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import platform from "platform";
+import "./device.css";
 
 function DeviceDetails() {
   const [browser, setBrowser] = useState("");
   const [version, setversion] = useState("");
+  const [layout, setlayout] = useState("");
   const [operatingsystem, setoperatingsystem] = useState("");
   const [fontSize, setFontSize] = useState("");
   const [screenResolution, setScreenResolution] = useState("");
@@ -13,6 +15,7 @@ function DeviceDetails() {
       setBrowser(platform.name.toString());
       setversion(platform.version.toString());
       setoperatingsystem(platform.os.toString());
+      setlayout(platform.layout.toString());
 
       const root = document.documentElement;
       const fontSize = getComputedStyle(root).fontSize;
@@ -28,34 +31,46 @@ function DeviceDetails() {
 
   return (
     <>
-      <section className="DeviceHeroSection">
-        <div className="device-text">
-          <h1 style={{ color: "#7b95f2" }} className="headingh1">
-            Device Details
-          </h1>
-
-          <div className="secretidentifier">
-            <p>
-              Browser: <span>{browser}</span>
-            </p>
-            <p>
-              Browser Version: <span>{version}</span>
-            </p>
-            <p>
-              Operating System: <span>{operatingsystem}</span>
-            </p>
-            <p>
-              Installed Fonts: <span>{fontSize}</span>
-            </p>
-            <p>
-              Screen Resolution: <span>{screenResolution}</span>
-            </p>
-          </div>
+      <div className="split">
+        <div className="right">
+          <h1 className="deviceheading">Device Details</h1>
+          <ul>
+            <li className="li-inline">
+              <p>
+                Browser: <span>{browser}</span>
+              </p>
+            </li>
+            <li className="li-inline">
+              <p>
+                Browser Version: <span>{version}</span>
+              </p>
+            </li>
+            <li className="li-inline">
+              <p>
+                Operating System: <span>{operatingsystem}</span>
+              </p>
+            </li>
+            <li className="li-inline">
+              <p>
+                CPU Arch: <span>{layout}</span>
+              </p>
+            </li>
+            <li className="li-inline">
+              <p>
+                Installed Fonts: <span>{fontSize}</span>
+              </p>
+            </li>
+            <li className="li-inline">
+              <p>
+                Screen Resolution: <span>{screenResolution}</span>
+              </p>
+            </li>
+          </ul>
         </div>
-        <div className="device-img">
+        <div className="left">
           <img src="/desktop.png" alt="" />
         </div>
-      </section>
+      </div>
     </>
   );
 }

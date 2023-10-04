@@ -1,45 +1,37 @@
 import React from "react";
-
+import "./home.css";
 function Home() {
   return (
     <>
-      <section className="herosection">
-        <div className="hero-img">
+      <div className="split">
+        <div className="left">
           <img src="/Fingerprint-girl.png" alt="" />
         </div>
-        <div className="hero-text">
+        <div className="right">
           <h1 className="headingh1">Your Digital Fingerprint</h1>
           <p className="heropara">
-            Check your data which may be stolen every <br /> time you visit a
-            website.
+            Check your data which may be stolen every time you visit a website.
           </p>
-          <ul className="hero-ul">
-            <li>
-              <img
-                className="list-hero-img"
-                src="./Geographical.png"
-                alt=""
-                srcSet=""
-              />
-              Geographical Data
+          <ul>
+            <li className="li-inline">
+              <img className="list-hero-img" src="./Geographical.png" alt="" srcSet=""/>
+              <p>Geographical Data</p>
             </li>
-            <li>
-              <img className="list-hero-img" src="./Device.png" alt="" />
-              Device Data
+            <li className="li-inline">
+            <img className="list-hero-img" src="./Device.png" alt="" srcSet=""/>
+              <p>Device Data</p>
             </li>
-            <li>
-              <img className="list-hero-img" src="./location.png" alt="" />
-              Location
+            <li className="li-inline">
+            <img className="list-hero-img" src="./location.png" alt="" srcSet=""/>
+              <p>Location</p>
             </li>
-            <li>
-              <img className="list-hero-img" src="./Plugins.png" alt="" />
-              Plugins
+            <li className="li-inline">
+              <img className="list-hero-img" src="./Plugins.png" alt="" srcSet=""/>
+              <p>Plugins</p>              
             </li>
           </ul>
-          
-          <p className="secretidentifier">Your secret identifier: <span>72069342</span></p>
         </div>
-      </section>
+      </div>
     </>
   );
 }
