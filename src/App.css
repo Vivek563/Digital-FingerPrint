@@ -15,6 +15,7 @@
 .left img{
   width: 80%;
   align-items: center;
+  transform: scaleX(-1);
 }
 .right {
   width: 50%;

@@ -5,7 +5,7 @@ function Home() {
     <>
       <div className="split">
         <div className="left">
-          <img src="/Fingerprint-girl.png" alt="" />
+          <img src="/ff.png" alt="" />
         </div>
         <div className="right">
           <h1 className="headingh1">Your Digital Fingerprint</h1>
