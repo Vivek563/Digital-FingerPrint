@@ -12,7 +12,7 @@ function NavBar() {
     </a>
   
     
-        <a href="https://github.com/Vivek563/Digital-FingerPrint"><button className='flex items-center space-x-6   text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-3 py-1.5 text-center mr-1 mb-4'>
+        <a href="https://github.com/Vivek563/Digital-FingerPrint"><button className='flex items-center space-x-6   text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-3 py-1.5 text-center mr-1 mb-2'>
             Github<img width="24" height="24" src="https://img.icons8.com/material-sharp/24/external-link.png" alt="link"/>
         </button></a>
       </div>

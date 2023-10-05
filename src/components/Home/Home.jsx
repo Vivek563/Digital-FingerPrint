@@ -4,7 +4,7 @@ function Home() {
   return (
     <>
       <div className="split">
-        <div className="left">
+        <div className="left home">
           <img src="/ff.png" alt="" />
         </div>
         <div className="right">

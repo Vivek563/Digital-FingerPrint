@@ -82,7 +82,7 @@
     width: 16%;
   }
   .headingh1 {
-    font-size: 35px;
+    font-size: 28px;
     text-align: center;
   }
   .heropara {
@@ -91,7 +91,14 @@
   }
   .left img {
     width: 100%;
+    margin-top: -60px;
     align-items: center;
+  }
+  .home img{
+    margin-top: 20px;
+  }
+  .geo img{
+    margin-top: 30px;
   }
   .li-inline p {
     font-size: 20px;
@@ -99,7 +106,7 @@
     align-items: center;
   }
   .deviceheading {
-    font-size: 55px;
+    font-size: 44px;
     text-align: center;
     font-weight: 900;
     margin-top: -70px;

@@ -22,7 +22,7 @@ function GeoData() {
 
     <>
     <div className="split">
-    <div className="left">
+    <div className="left geo">
           <img src="/geo2.png" alt="" />
         </div>
         <div className="right">
