@@ -14,19 +14,19 @@ function Home() {
           </p>
           <ul>
             <li className="li-inline">
-              <img className="list-hero-img" src="./Geographical.png" alt="" srcSet=""/>
+              <img className="list-hero-img" src="https://img.icons8.com/isometric/50/experimental-country-isometric--v1.png" alt="" srcSet=""/>
               <p>Geographical Data</p>
             </li>
             <li className="li-inline">
-            <img className="list-hero-img" src="./Device.png" alt="" srcSet=""/>
+            <img className="list-hero-img" src="https://img.icons8.com/3d-fluency/94/laptop.png" alt="" srcSet=""/>
               <p>Device Data</p>
             </li>
             <li className="li-inline">
-            <img className="list-hero-img" src="./location.png" alt="" srcSet=""/>
+            <img className="list-hero-img" src="https://img.icons8.com/3d-fluency/94/map-marker--v1.png" alt="" srcSet=""/>
               <p>Location</p>
             </li>
             <li className="li-inline">
-              <img className="list-hero-img" src="./Plugins.png" alt="" srcSet=""/>
+              <img className="list-hero-img" src="https://img.icons8.com/color/48/joomla.png" alt="" srcSet=""/>
               <p>Plugins</p>              
             </li>
           </ul>

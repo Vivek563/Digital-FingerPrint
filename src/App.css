@@ -1,4 +1,5 @@
-/* Default styles for larger screens */
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Patua+One&display=swap");
+
 .split {
   display: flex;
   align-items: center;
@@ -12,7 +13,7 @@
   width: 50%;
   align-items: center;
 }
-.left img{
+.left img {
   width: 80%;
   align-items: center;
   transform: scaleX(-1);
@@ -29,19 +30,24 @@
   padding: 15px;
 }
 .headingh1 {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 900;
   color: #ff725e;
+  font-family: "Croissant One", cursive;
+  /* font-family: "Patua One", cursive; */
 }
 .deviceheading {
-    font-size: 60px;
-    margin-left: 15px;
-    font-weight: 900;
-    color: #7b95f2;
-  }
+  font-size: 60px;
+  margin-left: 15px;
+  font-weight: 900;
+  font-family: "Croissant One", cursive;
+  
+  color: #7b95f2;
+}
 .heropara {
   font-size: 25px;
-  color: #455a64;
+  color: #ffc6d3;
+  font-family: 'Cookie', cursive;
 }
 .list-hero-img {
   width: 8%;
@@ -50,7 +56,7 @@
   font-size: 25px;
   font-weight: 600;
 }
-.split-mobile{
+.split-mobile {
   display: none;
 }
 @media (max-width: 768px) {
@@ -58,9 +64,8 @@
     flex-direction: column;
     align-items: flex-start;
     align-content: center;
-    
   }
-  .desktop{
+  .desktop {
     display: none;
   }
   .left,
@@ -84,7 +89,7 @@
     font-size: 20px;
     text-align: center;
   }
-  .left img{
+  .left img {
     width: 100%;
     align-items: center;
   }
@@ -101,7 +106,7 @@
     color: #7b95f2;
   }
 
-  .split-mobile{
+  .split-mobile {
     display: flex;
     align-items: center;
     align-content: space-between;
@@ -116,7 +121,7 @@
   color: #fff;
   margin-bottom: 40px;
   margin-top: 30px;
-  list-style-type: none
+  list-style-type: none;
 }
 .footer-icon {
   display: flex;
@@ -125,7 +130,7 @@
   gap: 20px;
 }
 
-span{
+span {
   font-weight: 900;
 }
 
@@ -135,15 +140,15 @@ span{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #fff; 
+  background: #fff;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #fdd096; 
+  background: #fdd096;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff725e; 
+  background: #ff725e;
 }
