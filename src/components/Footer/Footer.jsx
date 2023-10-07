@@ -13,8 +13,7 @@ function Footer() {
           <li>
             <a
               href="https://www.linkedin.com/in/vivek563maurya"
-              className="social-icon"
-            >
+              className="social-icon">
               <i className="fa-brands fa-linkedin"></i>
             </a>
           </li>
