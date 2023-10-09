@@ -1,6 +1,6 @@
 # Digital Fingerprint
 
-![Digital Fingerprint Screenshot](https://firebasestorage.googleapis.com/v0/b/facedetection-d4d02.appspot.com/o/thumbnail.png?alt=media&token=ecb02f88-9d89-4d7d-93e7-0d1fd50fd043&_gl=1*1jkgp8k*_ga*MzY4NzQ4NTE4LjE2NzkyODU2NDI.*_ga_CW55HF8NVT*MTY5NjQ0ODAwNS40LjEuMTY5NjQ0ODA4OC42MC4wLjA.)
+![Digital Fingerprint Screenshot](https://firebasestorage.googleapis.com/v0/b/facedetection-d4d02.appspot.com/o/screencapture-fingerprint-digital-vercel-app-2023-10-09-21_17_05.png?alt=media&token=0d23b737-bbf5-4e87-876d-55c46a3ccaa7&_gl=1*1mkyp3i*_ga*MzY4NzQ4NTE4LjE2NzkyODU2NDI.*_ga_CW55HF8NVT*MTY5Njg2NjQxMi41LjEuMTY5Njg2NjQ3NC42MC4wLjA.)
 
 ## Overview
 
