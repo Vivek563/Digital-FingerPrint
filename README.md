@@ -57,8 +57,8 @@ To run the project locally, follow these steps:
     ```
 5. Open your browser and visit http://localhost:5173/
 </br>
-</br>
-# Contributing
+
+## Contributing
 We welcome contributions from the community! If you'd like to contribute to this project, please follow these guidelines:
 
 1. Fork the repository.
