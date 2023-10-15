@@ -5,6 +5,7 @@ function GeoData() {
 
   const [userLocation, setUserLocation] = useState({});
 
+  
   useEffect(() => {
     
     axios.get(`https://ipinfo.io?token=8c8be48aaba949`)
