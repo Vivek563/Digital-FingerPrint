@@ -6,7 +6,7 @@
 
 Digital Fingerprint is an open-source web application that provides detailed information about a visitor's geographical and device-related data. It is built using Vite and React. With this project, you can easily gather information such as:
 
-- **Geographical Data**:
+**Geographical Data**:
   - IP Address
   - City
   - Region
@@ -16,7 +16,7 @@ Digital Fingerprint is an open-source web application that provides detailed inf
   - Postal Code
   - Location (Latitude and Longitude)
 
-- **Device Details**:
+ **Device Details**:
   - Browser
   - Browser Version
   - Operating System
